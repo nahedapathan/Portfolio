@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naheda Pathan · portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="description"
+      content="Naheda Pathan Java Full Stack Developer skilled in Spring Boot, Angular, REST APIs, and scalable backend development."
+    />
+  </head>
+
+  <body>
+    <!-- ==========  NAVBAR with vivid colours & new theme ========== 
+    <nav>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div class="logo">Naheda Pathan</div>
+        <div class="toggle-switch" onclick="toggleMode()"></div>
+      </div>
+
+      <ul>
+        <li
+          onclick="
+            document
+              .getElementById('about')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          About
+        </li>
+        <li
+          onclick="
+            document
+              .getElementById('skills')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Skills
+        </li>
+        <li
+          onclick="
+            document
+              .getElementById('projects')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Projects
+        </li>
+        <li
+          onclick="
+            document
+              .getElementById('education')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Education
+        </li>
+        <li
+          onclick="
+            document
+              .getElementById('work')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Work
+        </li>
+      </ul>
+
+      <button class="contact-btn" onclick="openMail()">Contact Me</button>
+    </nav>
+  -->
+    <nav>
+  <div style="display: flex; align-items: center; gap: 12px">
+    <div class="logo">Naheda Pathan</div>
+    <div class="toggle-switch" onclick="toggleMode()"></div>
+  </div>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul id="nav-links">
+    <li onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About</li>
+    <li onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })">Skills</li>
+    <li onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">Projects</li>
+    <li onclick="document.getElementById('education').scrollIntoView({ behavior: 'smooth' })">Education</li>
+    <li onclick="document.getElementById('work').scrollIntoView({ behavior: 'smooth' })">Work</li>
+  </ul>
+
+  <button class="contact-btn" onclick="openMail()">Contact Me</button>
+</nav>
+
+
+
+    <!-- HERO section (colours updated) -->
+    <section class="hero" id="about">
+      <div class="hero-text">
+        <h1>Hi, I’m <br /><span>Naheda Pathan</span></h1>
+        <p>
+          Java Full-Stack · Spring Boot · Angular. I build scalable apps with
+          strong architecture.
+        </p>
+
+        <button class="hire-btn" onclick="openMail()">Hire Me</button>
+      </div>
+
+      <div class="hero-img">
+        <div class="blob-main"></div>
+        <div class="blob-second"></div>
+
+        <img src="./image/profile.png" alt="profile abstract" />
+      </div>
+    </section>
+    <!--     *******************skills*********************************         -->
+    <section id="skills" class="section">
+      <!-- LEFT SIDE (ANIMATED) -->
+      <div class="left">
+        <h1>My Services & <span>Skills</span></h1>
+        <p>
+          I am a Java Full Stack Developer passionate about building scalable
+          and real-world applications using modern technologies.
+        </p>
+        <a href="./NahedaResume_2025.pdf" download>
+          <button class="btn">Download CV</button>
+        </a>
+      </div>
+
+      <!-- RIGHT SIDE SKILL BOXES (DYNAMIC) -->
+      <div class="right" id="skillsBox"></div>
+    </section>
+
+    <!-- ***************************************************Project-->
+    <section class="projects-section" id="projects">
+      <h2 class="project-title">Recent Projects</h2>
+      <h1 class="project-subtitle">Portfolio</h1>
+
+      <div class="carousel-container">
+        <!-- left arrow -->
+        <button
+          class="carousel-btn left"
+          id="scrollLeft"
+          aria-label="previous projects"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <!-- track / carousel -->
+        <div
+          class="project-track"
+          id="projectTrack"
+          tabindex="0"
+          role="region"
+          aria-label="project carousel"
+        >
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img src="./image/project1.png" alt="project" />
+            <div class="project-overlay">
+              <h3>Royal Stay Management System</h3>
+              <p>Java • Spring Boot • Angular</p>
+              <div class="project-buttons">
+                <a
+                  href="https://www.linkedin.com/posts/nahedakhan_javadeveloper-springboot-angular-activity-7393906050766209024-Oi7C?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkUKFgB2jLZtvmQEex1A6YNLnirqBdEJHY"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/nahedapathan/HotelManagementSystem.git"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img src="./image/project2.png" alt="project" />
+            <div class="project-overlay">
+              <h3>Restaurant</h3>
+              <p>Servlet JSP• HTML CS JS • Responsive UI</p>
+              <div class="project-buttons">
+                <a
+                  href="https://www.linkedin.com/posts/nahedakhan_java-webdevelopment-backenddevelopment-activity-7304749700753055744-S0mq?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkUKFgB2jLZtvmQEex1A6YNLnirqBdEJHY"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/nahedapathan/Restaurant.git"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img src="./image/project3.png" alt="project" />
+            <div class="project-overlay">
+              <h3>Taxi booking System</h3>
+              <p>Spring Boot HTML CSS JS</p>
+              <div class="project-buttons">
+                <a
+                  href="https://www.linkedin.com/posts/nahedakhan_java-springboot-softwaredevelopment-activity-7308017538255216641-cORJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkUKFgB2jLZtvmQEex1A6YNLnirqBdEJHY"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/nahedapathan/TaxiBooking.git"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <img src="./image/project4.png" alt="project" />
+            <div class="project-overlay">
+              <h3>Bank Management System</h3>
+              <p>Angular • API • Spring Boot</p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/nahedapathan/BankApplication.git"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/nahedapathan/BankApplication.git"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <img src="./image/project5.png" alt="project" />
+            <div class="project-overlay">
+              <h3>Fake Product API</h3>
+              <p>Angular • API • Responsive UI</p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/nahedapathan/ProductApiInAngular.git"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/nahedapathan/ProductApiInAngular.git"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <img src="./image/project6.png" alt="project" />
+            <div class="project-overlay">
+              <h3>Chess Board</h3>
+              <p>HTML • CSS • JS</p>
+              <div class="project-buttons">
+                <a
+                  href="https://nahedapathan.github.io/Chess-Board/"
+                  target="_blank"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/nahedapathan/Chess-Board.git"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right arrow -->
+        <button
+          class="carousel-btn right"
+          id="scrollRight"
+          aria-label="next projects"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- subtle footer with autoplay status (dynamic via JS) -->
+      <div class="carousel-footer">
+        <i class="fas fa-arrow-left"></i>
+        <span class="pause-indicator" id="playPauseDot"></span>
+        <span id="autoStatus">auto-scrolling</span>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </section>
+
+    <!--*****************************************************-->
+    <!-- ================= EDUCATION ================= -->
+    <section class="education-section" id="education">
+      <h2 class="edu-title">Education</h2>
+
+      <div class="edu-container">
+        <div class="edu-line"></div>
+
+        <!-- Item 3 -->
+        <div class="edu-item reveal">
+          <div class="edu-circle">3</div>
+
+          <div class="edu-card glass">
+            <div class="edu-icon">🎓</div>
+
+            <div class="edu-content">
+              <h3>M.S Bidve Engineering College Latur.</h3>
+              <p>B.Tech Computer Science</p>
+
+              <div class="edu-progress">
+                <div class="edu-bar" data-width="90%"></div>
+              </div>
+              <span>CGPA: 8.3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="edu-item reveal">
+          <div class="edu-circle">2</div>
+
+          <div class="edu-card glass">
+            <div class="edu-icon">🏫</div>
+
+            <div class="edu-content">
+              <h3>Sane Guruji Science Junior College</h3>
+              <p>HSC</p>
+
+              <div class="edu-progress">
+                <div class="edu-bar" data-width="95%"></div>
+              </div>
+              <span>68.46%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="edu-item reveal">
+          <div class="edu-circle">1</div>
+
+          <div class="edu-card glass">
+            <div class="edu-icon">🎒</div>
+
+            <div class="edu-content">
+              <h3>Crescent English School</h3>
+              <p>SSC</p>
+
+              <div class="edu-progress">
+                <div class="edu-bar" data-width="88%"></div>
+              </div>
+              <span>81.40%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Gradient Blobs -->
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+
+      <!-- Wave -->
+      <div class="edu-wave"></div>
+    </section>
+
+    <!-- ************************************work-->
+    <section class="work-section" id="work" aria-labelledby="workTitle">
+      <h2 class="work-title" id="workTitle">Work Experience</h2>
+
+      <div class="work-container">
+        <div class="work-line"></div>
+
+        <!-- EXPERIENCE 1 -->
+
+        <div class="work-item">
+          <div class="work-circle">1</div>
+
+          <div class="work-card">
+            <div class="company-logo">PHN</div>
+
+            <div class="work-content">
+              <h3>Frontend Developer Intern</h3>
+
+              <h4>
+                <i class="fas fa-building"></i> PHN Technology Pvt Ltd · India
+              </h4>
+
+              <time class="work-date">April 2023 – July 2023</time>
+
+              <div class="tech-stack">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+
+              <p>
+                Gained valuable hands-on experience working on real-world web
+                projects. Developed responsive web pages using HTML, CSS, and
+                JavaScript. Improved frontend development skills and
+                understanding of UI design.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE 2 -->
+
+        <div class="work-item">
+          <div class="work-circle">2</div>
+
+          <div class="work-card">
+            <div class="company-logo">AWS</div>
+
+            <div class="work-content">
+              <h3>AWS DevOps Trainee</h3>
+
+              <h4>
+                <i class="fas fa-building"></i> Full Stack Academy · India
+              </h4>
+
+              <time class="work-date">July 2023 – October 2023</time>
+
+              <div class="tech-stack">
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Linux</span>
+                <span class="tech-badge">CI/CD</span>
+              </div>
+
+              <p>
+                Learned and applied DevOps principles to streamline deployment
+                process. Deployed websites on AWS using EC2, S3 and other
+                services. Gained knowledge of cloud infrastructure and
+                automation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" id="footerContact">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <span class="logo-small">Naheda Pathan</span>
+          <p>Full-stack developer • creative problem solver</p>
+        </div>
+
+        <!-- Clickable Email -->
+        <div class="footer-email-large" onclick="openMail()">
+          <i class="fas fa-envelope"></i>pathannaheda.ltr@gmail.com
+        </div>
+
+        <!-- Social -->
+        <div class="footer-social">
+          <a
+            href="https://github.com/nahedapathan"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/nahedakhan" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Naheda Pathan — built with 💜 and Spring Boot
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
